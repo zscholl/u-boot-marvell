@@ -4,6 +4,13 @@
  * SPDX-License-Identifier:	GPL-2.0+
  */
 
+/* For crochet build */
+#ifndef CONFIG_SPL_BUILD
+#define CONFIG_API
+#define CONFIG_CMD_ELF
+#define CONFIG_SYS_MMC_MAX_DEVICE 1
+#endif
+
 #ifndef _CONFIG_MVEBU_ARMADA_37XX_H
 #define _CONFIG_MVEBU_ARMADA_37XX_H
 
